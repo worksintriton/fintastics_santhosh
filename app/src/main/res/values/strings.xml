@@ -51,5 +51,23 @@
     <string name="select_member">select member</string>
     <string name="sucessfully_link_is_shared">Sucessfully Link is Shared</string>
     <string name="sign_in_sign_up_through_the_link">Sign In / Sign Up Through The Link</string>
+    <string name="arrow_image">arrow_image</string>
+    <string name="customer_care">Customer Care</string>
+    <string name="income_report">Income Report</string>
+    <string name="expenditure_report">Expenditure Report</string>
+    <string name="transaction_report">Transaction Report</string>
+    <string name="movement_list">Movement List</string>
+    <string name="account_summary">Account Summary</string>
+    <string name="change_password">Change Password</string>
+    <string name="budgetary">Budgetary</string>
+    <string name="chat">Chat</string>
+    <string name="logout">Logout</string>
+    <string name="exsisting_password">Exsisting Password</string>
+    <string name="enter_existing_password">Enter Existing Password</string>
+    <string name="new_password">New Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="enter_confirm_new_password">Enter Confirm New Password</string>
+    <string name="submit">Submit</string>
 
 </resources>

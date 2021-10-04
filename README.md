@@ -1,1 +1,0 @@
-# fintastics_santhosh

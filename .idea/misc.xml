@@ -11,6 +11,7 @@
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_bg_thicblue.xml" value="0.6323529411764706" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_bg_white.xml" value="0.290625" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangular_corner_bg_darkblue.xml" value="0.29010416666666666" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/activity_change_password.xml" value="0.617096018735363" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/activity_choose_account_type.xml" value="0.19947916666666668" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/activity_create_profile.xml" value="0.4496487119437939" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/activity_dashoard.xml" value="0.6182669789227166" />
@@ -23,7 +24,15 @@
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_familymemberslist.xml" value="0.27447916666666666" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_selectfamilymemberslist.xml" value="0.2" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/header_layout.xml" value="0.4496487119437939" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/nav_header_main.xml" value="0.6182669789227166" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/navigation_drawer_layout_new.xml" value="0.617096018735363" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/oolbar_header_layout.xml" value="0.617096018735363" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/show_link_share_success_popup__layout.xml" value="0.6182669789227166" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/toolbar_header_layout.xml" value="0.617096018735363" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/toolbar_header_layout_with_backnavg.xml" value="0.617096018735363" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/menu/bottom_navigation.xml" value="0.6182669789227166" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/menu/navigation_menu_drawer.xml" value="0.617096018735363" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/menu/popup_menu.xml" value="0.6182669789227166" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.290625" />
       </map>
     </option>
