@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Fintastics</string>
+
+    <!-- Splash Screen-->
+    <string name="splash_image">splash_image</string>
+
+    <!-- Choose Account Screen-->
+    <string name="account_image">account_image</string>
+    <string name="create_account">Create Account</string>
+    <string name="select_your_account_type">Select Your Account Type</string>
+    <string name="personal_account">Personal Account</string>
+    <string name="family_account">Family Account</string>
+
+    <!-- Login Screen-->
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget Password?</string>
+
+    <!-- SignIn Screen-->
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+
+    <!-- SelectFamilyMembersActivity Screen-->
+    <string name="select_your_family_members">Select Your Family Members</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="next_step">Next Step</string>
+    <string name="family_members">Family Members</string>
+
+    <!-- SetProfile Screen-->
+    <string name="set_profile_for_your_family">Set Profile For Your Family</string>
+    <string name="set_profile">Set Profile</string>
+
+    <!-- Create Profile Screen-->
+    <string name="save">Save</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="contact_no">Contact Number</string>
+    <string name="dob">Date Of Birth</string>
+
+
+    <!-- Common Attr-->
+    <string name="title">Header Title</string>
+    <string name="share">Share</string>
+    <string name="share_the_app_link_to_your_family_members">Share The App Link To Your Family Members</string>
+    <string name="all">All</string>
+    <string name="select_member">select member</string>
+    <string name="sucessfully_link_is_shared">Sucessfully Link is Shared</string>
+    <string name="sign_in_sign_up_through_the_link">Sign In / Sign Up Through The Link</string>
+
+</resources>
