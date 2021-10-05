@@ -1,4 +1,4 @@
-package com.triton.fintastics;
+package com.triton.fintastics.familyaccount;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,10 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
+
+import com.triton.fintastics.R;
+import com.triton.fintastics.activities.DashoardActivity;
 
 public class SharelinkFamilyMembersActivity extends AppCompatActivity {
 

@@ -1,10 +1,12 @@
-package com.triton.fintastics;
+package com.triton.fintastics.familyaccount;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.triton.fintastics.R;
 
 public class CreateProfileActivity extends AppCompatActivity {
 

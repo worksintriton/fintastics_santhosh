@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginActivity"
+    tools:context=".activities.LoginActivity"
     android:background="@drawable/vector">
 
     <LinearLayout
@@ -33,10 +33,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/img_lbl_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/account_image"
+                    android:src="@drawable/logo_acccount"
+                    app:layout_constraintBottom_toTopOf="@id/ll_root"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ll_root">
+
+                </ImageView>
+
                 <RelativeLayout
                     android:id="@+id/ll_root"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="400dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginEnd="20dp"
@@ -100,6 +113,7 @@
                                 android:layout_marginLeft="@dimen/_10dp"
                                 android:layout_weight="1"
                                 android:background="@null"
+                                android:cursorVisible="true"
                                 android:fontFamily="@font/roboto_medium"
                                 android:gravity="start|center_vertical"
                                 android:hint="@string/username"
@@ -108,7 +122,8 @@
                                 android:lines="1"
                                 android:textAlignment="textStart"
                                 android:textColor="@color/txt_black"
-                                android:textColorHint="@color/hint_color"
+                                android:textColorHint="@color/hint_color_login"
+                                android:textCursorDrawable="@drawable/rectangular_corner_bg_grey"
                                 android:textSize="16sp" />
 
                         </LinearLayout>
@@ -122,7 +137,7 @@
                             android:layout_marginTop="@dimen/_20dp"
                             android:layout_marginEnd="@dimen/_20dp"
                             android:layout_marginRight="@dimen/_20dp"
-                            android:background="@drawable/dialog_background"
+                            android:background="@drawable/rectangle_corner_bg_white"
                             android:orientation="horizontal"
                             android:padding="@dimen/_15dp">
 
@@ -146,6 +161,8 @@
                                 android:layout_marginLeft="@dimen/_10dp"
                                 android:layout_weight="1"
                                 android:background="@null"
+                                android:cursorVisible="true"
+                                android:fontFamily="@font/roboto_medium"
                                 android:gravity="start|center_vertical"
                                 android:hint="@string/password"
                                 android:imeOptions="actionDone"
@@ -153,9 +170,9 @@
                                 android:lines="1"
                                 android:textAlignment="textStart"
                                 android:textColor="@color/txt_black"
-                                android:textColorHint="@color/hint_color"
-                                android:textSize="16sp"
-                                android:fontFamily="@font/roboto_medium"/>
+                                android:textColorHint="@color/hint_color_login"
+                                android:textCursorDrawable="@drawable/rectangular_corner_bg_grey"
+                                android:textSize="16sp" />
 
                         </LinearLayout>
 
@@ -164,12 +181,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/_20dp"
-                            android:background="@color/blue"
+                            android:background="@drawable/rectangular_corner_bg_darkblue"
                             android:fontFamily="@font/roboto_bold"
                             android:padding="@dimen/_15dp"
                             android:text="@string/login"
                             android:textAllCaps="false"
-                            android:textSize="@dimen/_20sp" />
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_20sp"
+                            android:onClick="gotoDashboard"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -184,8 +203,10 @@
                                 android:id="@+id/checkBox"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:buttonTint="@color/white"
                                 android:fontFamily="@font/roboto_regular"
                                 android:text="@string/remember_me"
+                                android:textColor="@color/white"
                                 android:textSize="@dimen/_12sp" />
 
                             <RelativeLayout
@@ -211,19 +232,6 @@
 
                 </RelativeLayout>
 
-
-                <ImageView
-                    android:id="@+id/img_lbl_account"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/account_image"
-                    android:src="@drawable/logo_acccount"
-                    app:layout_constraintBottom_toTopOf="@id/ll_root"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/ll_root">
-
-                </ImageView>
 
                 <TextView
                     android:id="@+id/txt_creatacc"

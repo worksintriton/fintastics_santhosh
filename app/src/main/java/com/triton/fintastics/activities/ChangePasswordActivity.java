@@ -1,9 +1,11 @@
-package com.triton.fintastics;
+package com.triton.fintastics.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+
+import com.triton.fintastics.R;
 
 public class ChangePasswordActivity extends AppCompatActivity {
 

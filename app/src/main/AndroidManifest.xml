@@ -9,40 +9,61 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
-            android:name=".ChangePasswordActivity"
-            android:exported="true" />
-        <activity
-            android:name=".DashoardActivity"
+            android:name=".transactionreport.TranscationReportActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/NewAppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SharelinkFamilyMembersActivity"
+            android:name=".expenditurereport.ExpenditureReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".incomereport.IncomeReportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.DashoardActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewAppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".familyaccount.SharelinkFamilyMembersActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".CreateProfileActivity"
+            android:name=".familyaccount.CreateProfileActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SetPrrofileActivity"
+            android:name=".familyaccount.SetPrrofileActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SelectFamilyMembersActivity"
+            android:name=".familyaccount.SelectFamilyMembersActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
@@ -54,24 +75,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ChooseAccountTypeActivity"
+            android:name=".activities.ChooseAccountTypeActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".activities.SignUpActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan" />

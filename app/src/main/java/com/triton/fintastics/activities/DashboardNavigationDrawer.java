@@ -1,4 +1,4 @@
-package com.triton.fintastics;
+package com.triton.fintastics.activities;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -33,6 +33,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
+import com.triton.fintastics.R;
+import com.triton.fintastics.expenditurereport.ExpenditureReportActivity;
+import com.triton.fintastics.incomereport.IncomeReportActivity;
+import com.triton.fintastics.transactionreport.TranscationReportActivity;
 
 import java.util.HashMap;
 
@@ -151,40 +155,39 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         nav_header_edit.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(),PetLoverEditProfileActivity.class)));
 */
 
-     /*   navigationView.setNavigationItemSelectedListener(menuItem -> {
+        navigationView.setNavigationItemSelectedListener(menuItem -> {
             //Closing drawer on item click
             drawerLayout.closeDrawers();
             //Check to see which item was being clicked and perform appropriate action
             switch (menuItem.getItemId()) {
                 //Replacing the main content with ContentFragment Which is our Inbox View;
                 case R.id.nav_item_one:
-
+                    gotoIncomeReport();
                     return true;
 
                 // For rest of the options we just show a toast on click
                 case R.id.nav_item_two:
-                    gotoMyOrders();
+                  gotoExpenditureReport();
                     return true;
 
                 case R.id.nav_item_three:
-                    gotoMyAppointments();
+                    gotoTranscationReport();
                     return true;
 
                 case R.id.nav_item_four:
                     return true;
 
                 case R.id.nav_item_five:
+                    gotoChangePassword();
                     return true;
 
                 case R.id.nav_item_six:
                     return true;
                 case R.id.nav_item_seven:
                   //  confirmLogoutDialog();
-                    showLogOutAppAlert();
+
                     return true;
 
-                case R.id.nav_item_nine:
-                    return true;
 
 
 
@@ -193,9 +196,10 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
                     return true;
 
             }
-        });*/
+        });
 
     }
+
 
 
     private void initToolBar(View view) {
@@ -374,6 +378,27 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         }
     }
 
+
+    private void gotoChangePassword() {
+
+        startActivity(new Intent(getApplicationContext(), ChangePasswordActivity.class));
+    }
+
+    private void gotoTranscationReport() {
+        startActivity(new Intent(getApplicationContext(), TranscationReportActivity.class));
+
+    }
+
+
+    private void gotoExpenditureReport() {
+        startActivity(new Intent(getApplicationContext(), ExpenditureReportActivity.class));
+
+    }
+
+    private void gotoIncomeReport() {
+        startActivity(new Intent(getApplicationContext(), IncomeReportActivity.class));
+
+    }
 
 /*
 
