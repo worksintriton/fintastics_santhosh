@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context=".expenditurereport.ExpenditureReportActivity">
+    tools:context=".movementlist.MovementListActivity">
 
     <LinearLayout
         android:id="@+id/headerView"
@@ -40,33 +39,32 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/_15dp">
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+               >
 
-                <RadioButton
-                    android:id="@+id/rb_familymembers"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/roboto_medium"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:textColor="@color/text_black"
-                    android:textSize="16sp" />
-
+                <View
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/darkgray"/>
                 <TextView
                     android:id="@+id/txt_allfamilymembers"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20dp"
                     android:layout_marginLeft="@dimen/_20dp"
                     android:layout_marginEnd="@dimen/_20dp"
                     android:layout_marginRight="@dimen/_20dp"
-                    android:layout_weight="1"
                     android:fontFamily="@font/roboto_medium"
-                    android:text="@string/all"
-                    android:textColor="@color/text_black"
+                    android:text="@string/transaction_on_type"
+                    android:textColor="@color/darkgray"
                     android:textSize="@dimen/_18sp" />
+                <View
+                    android:layout_width="@dimen/_100dp"
+                    android:layout_height="@dimen/_1dp"
+                    android:background="@color/darkgray"/>
+
 
             </LinearLayout>
 
@@ -76,17 +74,6 @@
                 android:layout_marginTop="@dimen/_10dp"
                 android:orientation="horizontal"
                 android:padding="@dimen/_15dp">
-
-                <RadioButton
-                    android:id="@+id/rb_selectfamilymembers1"
-                    android:layout_width="@dimen/_30dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:textColor="@color/text_black"
-                    android:textSize="16sp" />
-
                 <EditText
                     android:id="@+id/edt_selectfamilymember2"
                     android:layout_width="0dp"
@@ -96,9 +83,9 @@
                     android:layout_marginEnd="@dimen/_20dp"
                     android:layout_marginRight="@dimen/_20dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rectangle_corner_bg_blue"
+                    android:background="@drawable/rectangle_corner_bg_white_corner_blue"
                     android:fontFamily="@font/roboto_medium"
-                    android:hint="@string/on_date"
+                    android:hint="@string/select_transaction_type"
                     android:imeOptions="actionDone"
                     android:inputType="text"
                     android:lines="1"
@@ -108,17 +95,7 @@
                     android:textSize="16sp"
                     tools:ignore="Autofill,LabelFor" />
 
-                <ImageView
-                    android:id="@+id/img_arrow2"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentBottom="false"
-                    android:layout_centerVertical="false"
-                    android:layout_gravity="center_vertical"
-                    android:contentDescription="@string/arrow_image"
-                    app:srcCompat="@drawable/calander" />
+
 
 
             </LinearLayout>
@@ -128,115 +105,51 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
                 android:orientation="horizontal"
-                android:padding="@dimen/_15dp">
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp">
 
-                <RadioButton
-                    android:id="@+id/rb_selectfamilymembers"
-                    android:layout_width="@dimen/_30dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:textColor="@color/text_black"
-                    android:textSize="16sp" />
 
-                <EditText
-                    android:id="@+id/edt_selectfamilymember"
-                    android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/txt_selectmonth"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20dp"
                     android:layout_marginLeft="@dimen/_20dp"
                     android:layout_marginEnd="@dimen/_20dp"
                     android:layout_marginRight="@dimen/_20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/rectangle_corner_bg_blue"
+                    android:background="@drawable/rectangle_corner_bg_white_corner_blue"
                     android:fontFamily="@font/roboto_medium"
-                    android:hint="From"
-                    android:imeOptions="actionDone"
-                    android:inputType="text"
+                    android:hint="@string/select_month"
                     android:lines="1"
                     android:padding="@dimen/_15dp"
                     android:textColor="@color/txt_black"
                     android:textColorHint="@color/hint_color"
                     android:textSize="16sp"
                     tools:ignore="Autofill,LabelFor" />
-
-                <ImageView
-                    android:id="@+id/img_arrow3"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentBottom="false"
-                    android:layout_centerVertical="false"
-                    android:layout_gravity="center_vertical"
-                    android:contentDescription="@string/arrow_image"
-                    app:srcCompat="@drawable/calander" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10dp"
-                android:orientation="horizontal"
-                android:padding="@dimen/_15dp">
-
-                <RadioButton
-                    android:id="@+id/rb_none1"
-                    android:layout_width="@dimen/_30dp"
+                <TextView
+                    android:id="@+id/txt_selectyear"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20dp"
+                    android:background="@drawable/rectangle_corner_bg_white_corner_blue"
                     android:fontFamily="@font/roboto_medium"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:textColor="@color/text_black"
+                    android:hint="@string/select_year"
+                    android:lines="1"
+                    android:padding="@dimen/_15dp"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/hint_color"
                     android:textSize="16sp"
-                    android:visibility="invisible" />
+                    tools:ignore="Autofill,LabelFor"
+                    android:layout_marginEnd="@dimen/_20dp" />
 
-                <RelativeLayout
-                    android:id="@+id/rl_setProfile1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_20dp"
-                    android:layout_marginLeft="@dimen/_20dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/edt_selectfamilymember22"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="@dimen/_20dp"
-                        android:layout_marginRight="@dimen/_20dp"
-                        android:background="@drawable/rectangle_corner_bg_blue"
-                        android:fontFamily="@font/roboto_medium"
-                        android:hint="To"
-                        android:imeOptions="actionDone"
-                        android:inputType="text"
-                        android:lines="1"
-                        android:padding="@dimen/_15dp"
-                        android:textColor="@color/txt_black"
-                        android:textColorHint="@color/hint_color"
-                        android:textSize="16sp"
-                        tools:ignore="Autofill,LabelFor" />
-
-                </RelativeLayout>
-
-                <ImageView
-                    android:id="@+id/img_arrow4"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentBottom="false"
-                    android:layout_centerVertical="false"
-                    android:layout_gravity="center_vertical"
-                    android:contentDescription="@string/arrow_image"
-                    app:srcCompat="@drawable/calander" />
 
 
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"

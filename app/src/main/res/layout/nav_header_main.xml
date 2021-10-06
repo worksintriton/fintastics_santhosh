@@ -63,14 +63,16 @@
 
             <ImageView
                 android:id="@+id/img_arrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="false"
                 android:layout_centerVertical="true"
                 android:contentDescription="@string/arrow_image"
-                app:srcCompat="@drawable/icn_arrow" />
+                app:srcCompat="@drawable/icn_arrow"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:layout_marginRight="@dimen/_20dp" />
         </RelativeLayout>
 
     </FrameLayout>

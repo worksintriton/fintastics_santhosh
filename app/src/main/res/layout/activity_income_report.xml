@@ -15,6 +15,7 @@
         android:orientation="vertical">
 
         <include
+            android:id="@+id/include_header"
             layout="@layout/toolbar_header_layout_with_backnavg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -97,7 +98,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rectangle_corner_bg_blue"
                     android:fontFamily="@font/roboto_medium"
-                    android:hint="OnDate"
+                    android:hint="@string/on_date"
                     android:imeOptions="actionDone"
                     android:inputType="text"
                     android:lines="1"
@@ -111,10 +112,6 @@
                     android:id="@+id/img_arrow2"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentBottom="false"
-                    android:layout_centerVertical="false"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="@string/arrow_image"
                     app:srcCompat="@drawable/calander" />
@@ -150,7 +147,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/rectangle_corner_bg_blue"
                     android:fontFamily="@font/roboto_medium"
-                    android:hint="From"
+                    android:hint="@string/from"
                     android:imeOptions="actionDone"
                     android:inputType="text"
                     android:lines="1"
@@ -164,10 +161,6 @@
                     android:id="@+id/img_arrow3"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentBottom="false"
-                    android:layout_centerVertical="false"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="@string/arrow_image"
                     app:srcCompat="@drawable/calander" />
@@ -210,7 +203,7 @@
                         android:layout_marginRight="@dimen/_20dp"
                         android:background="@drawable/rectangle_corner_bg_blue"
                         android:fontFamily="@font/roboto_medium"
-                        android:hint="To"
+                        android:hint="@string/to"
                         android:imeOptions="actionDone"
                         android:inputType="text"
                         android:lines="1"
@@ -226,10 +219,6 @@
                     android:id="@+id/img_arrow4"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="false"
-                    android:layout_alignParentBottom="false"
-                    android:layout_centerVertical="false"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="@string/arrow_image"
                     app:srcCompat="@drawable/calander" />
@@ -274,7 +263,7 @@
                         android:background="@color/primary"
                         android:drawablePadding="@dimen/_20dp"
                         android:fontFamily="@font/roboto_medium"
-                        android:text="Submit"
+                        android:text="@string/submit"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_20sp"

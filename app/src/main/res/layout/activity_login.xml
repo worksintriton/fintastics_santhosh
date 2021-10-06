@@ -92,7 +92,8 @@
                             android:layout_marginRight="@dimen/_20dp"
                             android:background="@drawable/rectangle_corner_bg_white"
                             android:orientation="horizontal"
-                            android:padding="@dimen/_15dp">
+                            android:padding="@dimen/_15dp"
+                            android:layout_gravity="center|center_horizontal">
 
                             <ImageView
                                 android:id="@+id/img_lbl_usrnme"
@@ -108,19 +109,16 @@
                                 android:id="@+id/edt_usrname"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_gravity="center"
                                 android:layout_marginStart="@dimen/_10dp"
                                 android:layout_marginLeft="@dimen/_10dp"
                                 android:layout_weight="1"
                                 android:background="@null"
                                 android:cursorVisible="true"
                                 android:fontFamily="@font/roboto_medium"
-                                android:gravity="start|center_vertical"
                                 android:hint="@string/username"
                                 android:imeOptions="actionDone"
                                 android:inputType="text"
                                 android:lines="1"
-                                android:textAlignment="textStart"
                                 android:textColor="@color/txt_black"
                                 android:textColorHint="@color/hint_color_login"
                                 android:textCursorDrawable="@drawable/rectangular_corner_bg_grey"
@@ -139,7 +137,8 @@
                             android:layout_marginRight="@dimen/_20dp"
                             android:background="@drawable/rectangle_corner_bg_white"
                             android:orientation="horizontal"
-                            android:padding="@dimen/_15dp">
+                            android:padding="@dimen/_15dp"
+                            android:layout_gravity="center|center_horizontal">
 
                             <ImageView
                                 android:id="@+id/img_lbl_passwd"
@@ -156,19 +155,16 @@
                                 android:id="@+id/edt_passwd"
                                 android:layout_width="0dp"
                                 android:layout_height="match_parent"
-                                android:layout_gravity="center"
                                 android:layout_marginStart="@dimen/_10dp"
                                 android:layout_marginLeft="@dimen/_10dp"
                                 android:layout_weight="1"
                                 android:background="@null"
                                 android:cursorVisible="true"
                                 android:fontFamily="@font/roboto_medium"
-                                android:gravity="start|center_vertical"
                                 android:hint="@string/password"
                                 android:imeOptions="actionDone"
                                 android:inputType="textPassword"
                                 android:lines="1"
-                                android:textAlignment="textStart"
                                 android:textColor="@color/txt_black"
                                 android:textColorHint="@color/hint_color_login"
                                 android:textCursorDrawable="@drawable/rectangular_corner_bg_grey"

@@ -1,4 +1,4 @@
-package com.triton.fintastics.expenditurereport;
+package com.triton.fintastics.chat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,8 +16,9 @@ import com.triton.fintastics.activities.DashoardActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ExpenditureReportActivity extends AppCompatActivity {
-    private String TAG = "ExpenditureReportActivity";
+public class ChatActivity extends AppCompatActivity {
+
+    private String TAG = "ChatActivity";
 
     @SuppressLint("NonConstantResourceId")
     @BindView(R.id.include_header)
@@ -26,13 +27,13 @@ public class ExpenditureReportActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_expenditure_report);
+        setContentView(R.layout.activity_chat);
         ButterKnife.bind(this);
         Log.w(TAG,"onCreate");
 
         ImageView img_back = include_header.findViewById(R.id.img_back);
         TextView txt_title = include_header.findViewById(R.id.txt_title);
-        txt_title.setText(getResources().getString(R.string.expenditure_report));
+        txt_title.setText(getResources().getString(R.string.chat));
 
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override

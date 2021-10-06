@@ -34,8 +34,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
 import com.triton.fintastics.R;
+import com.triton.fintastics.accountsummary.AccountSummaryActivity;
+import com.triton.fintastics.budgetary.BudgetaryActivity;
+import com.triton.fintastics.chat.ChatActivity;
 import com.triton.fintastics.expenditurereport.ExpenditureReportActivity;
 import com.triton.fintastics.incomereport.IncomeReportActivity;
+import com.triton.fintastics.movementlist.MovementListActivity;
 import com.triton.fintastics.transactionreport.TranscationReportActivity;
 
 import java.util.HashMap;
@@ -76,6 +80,7 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
 
 
     ProgressDialog progressDialog;
+    private Dialog dialog;
 
 
 //    SessionManager session;
@@ -175,6 +180,7 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
                     return true;
 
                 case R.id.nav_item_four:
+                    gotoAccountSummary();
                     return true;
 
                 case R.id.nav_item_five:
@@ -182,10 +188,14 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
                     return true;
 
                 case R.id.nav_item_six:
+                    gotoBudgetary();
                     return true;
                 case R.id.nav_item_seven:
-                  //  confirmLogoutDialog();
+                    gotoChat();
+                    return true;
 
+                case R.id.nav_item_ten:
+                    gotoMovementList();
                     return true;
 
 
@@ -211,124 +221,22 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         drawerImg = toolbar_layout.findViewById(R.id.img_menu);
 
 
-//        toolbar_title = toolbar.findViewById(R.id.toolbar_title);
-//        toolbar_title.setText("Home " );
 
         RelativeLayout rl_logout = toolbar_layout.findViewById(R.id.rl_logout);
-     /*   ImageView img_notification = toolbar.findViewById(R.id.img_notification);
-        ImageView img_cart = toolbar.findViewById(R.id.img_cart);
-        ImageView img_profile = toolbar.findViewById(R.id.img_profile);*/
-
-      /*  img_sos.setOnClickListener(v -> {
-            *//*Log.w(TAG,"SOSLIST"+new Gson().toJson(APIClient.sosList));
-            showSOSAlert(APIClient.sosList);*//*
-
-        });
-        img_notification.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), NotificationActivity.class)));
-
-        img_cart.setOnClickListener(new View.OnClickListener() {
+        rl_logout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                if(PetLoverDashboardActivity.active_tag != null){
-                    Log.w(TAG,"active_tag : "+PetLoverDashboardActivity.active_tag);
-                    Intent i = new Intent(getApplicationContext(), PetCartActivity.class);
-                    i.putExtra("active_tag",PetLoverDashboardActivity.active_tag);
-                    startActivity(i);
-                }else {
-                    startActivity(new Intent(getApplicationContext(), PetCartActivity.class));
-                }
+            public void onClick(View view) {
+                showLogOutAppAlert();
             }
         });
-        img_profile.setOnClickListener(v -> {
 
-            Intent intent = new Intent(getApplicationContext(),PetLoverProfileScreenActivity.class);
-            intent.putExtra("fromactivity",TAG);
-            if(PetLoverDashboardActivity.active_tag != null){
-                intent.putExtra("active_tag",PetLoverDashboardActivity.active_tag);
-
-            }
-            startActivity(intent);
-        });*/
 
 
         toggleView();
     }
 
-/*
-    private void showSOSAlert(List<PetLoverDashboardResponse.DataBean.SOSBean> sosList) {
-
-        try {
-
-            dialog = new Dialog(PetLoverNavigationDrawer.this);
-            dialog.setContentView(R.layout.sos_popup_layout);
-            RecyclerView rv_sosnumbers = (RecyclerView)dialog.findViewById(R.id.rv_sosnumbers);
-            Button btn_call = (Button)dialog.findViewById(R.id.btn_call);
-            TextView txt_no_records = (TextView)dialog.findViewById(R.id.txt_no_records);
-            ImageView img_close = (ImageView)dialog.findViewById(R.id.img_close);
-            img_close.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    dialog.dismiss();
-                }
-            });
 
 
-          */
-/*  if(sosList != null && sosList.size()>0){
-                rv_sosnumbers.setVisibility(View.VISIBLE);
-                btn_call.setVisibility(View.VISIBLE);
-                txt_no_records.setVisibility(View.GONE);
-                rv_sosnumbers.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
-                rv_sosnumbers.setItemAnimator(new DefaultItemAnimator());
-                PetLoverSOSAdapter petLoverSOSAdapter = new PetLoverSOSAdapter(getApplicationContext(), sosList,this);
-                rv_sosnumbers.setAdapter(petLoverSOSAdapter);
-            }
-            else{
-                rv_sosnumbers.setVisibility(View.GONE);
-                btn_call.setVisibility(View.GONE);
-                txt_no_records.setVisibility(View.VISIBLE);
-                txt_no_records.setText(getResources().getString(R.string.no_phone_numbers));
-
-            }*//*
-
-
-            btn_call.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-                        ActivityCompat.requestPermissions(PetLoverNavigationDrawer.this, new String[]{Manifest.permission.CALL_PHONE},REQUEST_PHONE_CALL);
-                    }
-                    else
-                    {
-                        gotoPhone();
-                    }
-
-                }
-            });
-
-
-
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            dialog.show();
-
-
-        } catch (WindowManager.BadTokenException e) {
-            e.printStackTrace();
-        }
-
-
-
-
-    }
-    private void gotoPhone() {
-        Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + sosPhonenumber));
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
-        startActivity(intent);
-    }
-
-*/
 
 
 
@@ -388,6 +296,22 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         startActivity(new Intent(getApplicationContext(), TranscationReportActivity.class));
 
     }
+    private void gotoAccountSummary() {
+        startActivity(new Intent(getApplicationContext(), AccountSummaryActivity.class));
+
+    }
+    private void gotoBudgetary() {
+        startActivity(new Intent(getApplicationContext(), BudgetaryActivity.class));
+
+    }
+    private void gotoChat() {
+        startActivity(new Intent(getApplicationContext(), ChatActivity.class));
+
+    }
+    private void gotoMovementList() {
+        startActivity(new Intent(getApplicationContext(), MovementListActivity.class));
+
+    }
 
 
     private void gotoExpenditureReport() {
@@ -442,16 +366,7 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         startActivity(new Intent(getApplicationContext(), SoSActivity.class));
 
     }
-    private void gotoLogout() {
-        session.logoutUser();
-        session.setIsLogin(false);
-        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-        finish();
 
-
-
-
-    }
 */
 
 
@@ -463,10 +378,10 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         }
     }*/
 
-    /*private void showLogOutAppAlert() {
+    private void showLogOutAppAlert() {
         try {
 
-            dialog = new Dialog(PetLoverNavigationDrawer.this);
+            dialog = new Dialog(DashboardNavigationDrawer.this);
             dialog.setContentView(R.layout.alert_logout_layout);
             Button btn_no = dialog.findViewById(R.id.btn_no);
             Button btn_yes = dialog.findViewById(R.id.btn_yes);
@@ -495,7 +410,17 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
 
 
 
-    }*/
+    }
+    private void gotoLogout() {
+       // session.logoutUser();
+        //session.setIsLogin(false);
+        startActivity(new Intent(getApplicationContext(), ChooseAccountTypeActivity.class));
+        finish();
+
+
+
+
+    }
 
 
 
