@@ -212,7 +212,7 @@ tools:context=".activities.ChangePasswordActivity">
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/roboto_medium"
                         android:text="Daily"
-                        android:textColor="@color/text_black"
+                        android:textColor="@color/white"
                         android:textSize="@dimen/_14sp" />
 
                     <TextView

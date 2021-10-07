@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.triton.fintastics.R;
 import com.triton.fintastics.activities.DashoardActivity;
+import com.triton.fintastics.transactionreport.TranscationReportActivity;
+import com.triton.fintastics.transactionreport.TranscationReportShowDataActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,17 +36,24 @@ public class MovementListActivity extends AppCompatActivity {
         TextView txt_title = include_header.findViewById(R.id.txt_title);
         txt_title.setText(getResources().getString(R.string.movement_list));
 
-        img_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+        img_back.setOnClickListener(view -> onBackPressed());
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         startActivity(new Intent(getApplicationContext(), DashoardActivity.class));
         finish();
+    }
+
+    public void gotoMovementListShow(View view) {
+
+
+        Intent i=new Intent(MovementListActivity.this,
+                MovementListShowDataActivity.class);
+        //Intent is used to switch from one activity to another.
+
+        startActivity(i);
+        //invoke the SecondActivity.
+
     }
 }

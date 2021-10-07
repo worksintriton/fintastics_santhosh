@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.triton.fintastics.R;
 import com.triton.fintastics.activities.DashoardActivity;
+import com.triton.fintastics.expenditurereport.ExpenditureReportActivity;
+import com.triton.fintastics.expenditurereport.ExpenditureReportShowDataActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,12 +35,7 @@ public class TranscationReportActivity extends AppCompatActivity {
         TextView txt_title = include_header.findViewById(R.id.txt_title);
         txt_title.setText(getResources().getString(R.string.transaction_report));
 
-        img_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onBackPressed();
-            }
-        });
+        img_back.setOnClickListener(view -> onBackPressed());
     }
 
     @Override
@@ -46,5 +43,17 @@ public class TranscationReportActivity extends AppCompatActivity {
         super.onBackPressed();
         startActivity(new Intent(getApplicationContext(), DashoardActivity.class));
         finish();
+    }
+
+    public void gotoTransactionReportShow(View view) {
+
+
+        Intent i=new Intent(TranscationReportActivity.this,
+                TranscationReportShowDataActivity.class);
+        //Intent is used to switch from one activity to another.
+
+        startActivity(i);
+        //invoke the SecondActivity.
+
     }
 }

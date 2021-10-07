@@ -8,19 +8,6 @@
     tools:context=".activities.ChooseAccountTypeActivity">
 
 
-    <ImageView
-        android:id="@+id/img_lbl_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logo_acccount"
-        app:layout_constraintBottom_toTopOf="@id/ll_root"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/ll_root"
-        android:contentDescription="@string/account_image">
-
-    </ImageView>
-
     <RelativeLayout
         android:id="@+id/ll_root"
         android:layout_width="0dp"
@@ -71,29 +58,30 @@
                 android:id="@+id/ll_personal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_20dp"
                 android:layout_marginLeft="@dimen/_20dp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:layout_marginEnd="@dimen/_20dp"
                 android:layout_marginRight="@dimen/_20dp"
                 android:background="@drawable/ellipse_bgm"
+                android:onClick="personal"
                 android:orientation="horizontal"
                 android:padding="@dimen/_15dp"
-                android:layout_gravity="center"
-                android:onClick="personal"
                 tools:ignore="UsingOnClickInXml">
 
                 <ImageView
                     android:id="@+id/img_lbl_personal1"
                     android:layout_width="@dimen/_30dp"
                     android:layout_height="@dimen/_30dp"
-                    android:contentDescription="@string/account_image"
-                    android:src="@drawable/icn_personal"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginStart="@dimen/_10dp"
                     android:layout_marginLeft="@dimen/_10dp"
-                    android:layout_gravity="center_horizontal">
+                    android:contentDescription="@string/account_image"
+                    android:src="@drawable/icn_personal">
 
                 </ImageView>
+
                 <TextView
                     android:id="@+id/txt_lbl_personal"
                     android:layout_width="wrap_content"
@@ -107,34 +95,33 @@
                     android:textSize="16sp" />
 
 
-
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_family"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_20dp"
                 android:layout_marginLeft="@dimen/_20dp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:layout_marginEnd="@dimen/_20dp"
                 android:layout_marginRight="@dimen/_20dp"
                 android:background="@drawable/ellipse_bgm"
+                android:onClick="family"
                 android:orientation="horizontal"
                 android:padding="@dimen/_15dp"
-                android:layout_gravity="center"
-                android:onClick="family"
                 tools:ignore="UsingOnClickInXml">
 
                 <ImageView
                     android:id="@+id/img_lbl_family"
                     android:layout_width="@dimen/_30dp"
                     android:layout_height="@dimen/_30dp"
-                    android:contentDescription="@string/account_image"
-                    android:src="@drawable/icn_family"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginStart="@dimen/_10dp"
                     android:layout_marginLeft="@dimen/_10dp"
-                    android:layout_gravity="center_horizontal">
+                    android:contentDescription="@string/account_image"
+                    android:src="@drawable/icn_family">
 
                 </ImageView>
 
@@ -154,11 +141,23 @@
             </LinearLayout>
 
 
-
-
         </LinearLayout>
 
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_lbl_account"
+        android:alpha="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_acccount"
+        app:layout_constraintBottom_toTopOf="@id/ll_root"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ll_root"
+        android:contentDescription="@string/account_image">
+
+    </ImageView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

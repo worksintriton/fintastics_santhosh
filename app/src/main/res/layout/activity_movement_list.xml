@@ -74,8 +74,9 @@
                 android:layout_marginTop="@dimen/_10dp"
                 android:orientation="horizontal"
                 android:padding="@dimen/_15dp">
+
                 <EditText
-                    android:id="@+id/edt_selectfamilymember2"
+                    android:id="@+id/edt_transactype"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_20dp"
@@ -128,6 +129,7 @@
                     android:textColorHint="@color/hint_color"
                     android:textSize="16sp"
                     tools:ignore="Autofill,LabelFor" />
+
                 <TextView
                     android:id="@+id/txt_selectyear"
                     android:layout_width="match_parent"
@@ -171,17 +173,18 @@
                     android:visibility="invisible" />
 
                 <RelativeLayout
-                    android:id="@+id/rl_setProfile"
+                    android:id="@+id/rl_submit"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_40dp"
                     android:layout_marginStart="@dimen/_20dp"
                     android:layout_marginLeft="@dimen/_20dp"
                     android:layout_weight="1"
                     android:background="@drawable/rectangle_corner_bg_thicblue"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:onClick="gotoMovementListShow">
 
                     <TextView
-                        android:id="@+id/txt_setProfile"
+                        android:id="@+id/txt_submit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
