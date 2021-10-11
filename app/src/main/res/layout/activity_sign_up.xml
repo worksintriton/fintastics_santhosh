@@ -33,19 +33,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageView
-                    android:id="@+id/img_lbl_account"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/account_image"
-                    android:src="@drawable/logo_acccount"
-                    app:layout_constraintBottom_toTopOf="@id/ll_root"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/ll_root">
-
-                </ImageView>
-
                 <RelativeLayout
                     android:id="@+id/ll_root"
                     android:layout_width="0dp"
@@ -227,16 +214,30 @@
                             android:layout_margin="@dimen/_20dp"
                             android:background="@drawable/rectangular_corner_bg_darkblue"
                             android:fontFamily="@font/roboto_bold"
+                            android:onClick="gotoDashboard"
                             android:padding="@dimen/_15dp"
                             android:text="@string/login"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_20sp"
-                            android:onClick="gotoDashboard"/>
+                            android:textSize="@dimen/_20sp" />
 
                     </LinearLayout>
 
                 </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_lbl_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.5"
+                    android:contentDescription="@string/account_image"
+                    android:src="@drawable/logo_acccount"
+                    app:layout_constraintBottom_toTopOf="@id/ll_root"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/ll_root">
+
+                </ImageView>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

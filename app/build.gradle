@@ -68,4 +68,11 @@ dependencies {
 
     //noinspection GradleDynamicVersion
     implementation 'com.github.siyamed:android-shape-imageview:0.9.+@aar'
+
+    /*stackedbarchart https://github.com/blackfizz/EazeGraph*/
+
+    implementation 'com.github.blackfizz:eazegraph:1.2.2@aar'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+
 }

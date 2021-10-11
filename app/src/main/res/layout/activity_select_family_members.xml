@@ -79,10 +79,80 @@
                             android:textColor="@color/blue"
                             android:textSize="@dimen/_14sp" />
 
+                        <LinearLayout
+                            android:layout_width="@dimen/_260dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10dp"
+                            android:background="@drawable/rectangle_corner_bg_white"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:text="@string/father"
+                                android:textColor="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_260dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10dp"
+                            android:background="@drawable/rectangle_corner_bg_white"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:text="@string/mother"
+                                android:textColor="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_260dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/_10dp"
+                            android:background="@drawable/rectangle_corner_bg_white"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/roboto_bold"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:text="@string/other"
+                                android:textColor="@color/blue"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="@dimen/_20dp">
+                            android:layout_margin="@dimen/_20dp"
+                            android:visibility="gone">
 
                             <androidx.recyclerview.widget.RecyclerView
                                 android:id="@+id/rv_familymemberslist"
@@ -99,7 +169,7 @@
                                 android:text="@string/no_data_found"
                                 android:textColor="@color/white"
                                 android:textSize="@dimen/_14sp"
-                                android:visibility="gone"/>
+                                android:visibility="gone" />
 
                         </RelativeLayout>
 
@@ -129,6 +199,7 @@
                     android:id="@+id/img_lbl_account"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:alpha="0.5"
                     android:contentDescription="@string/account_image"
                     android:src="@drawable/logo_acccount"
                     app:layout_constraintBottom_toTopOf="@id/ll_root"

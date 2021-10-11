@@ -11,7 +11,7 @@
     <RelativeLayout
         android:id="@+id/ll_root"
         android:layout_width="0dp"
-        android:layout_height="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginEnd="20dp"
@@ -26,6 +26,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:layout_marginTop="@dimen/_60dp"
             android:orientation="vertical"
             tools:ignore="UselessParent">
@@ -147,15 +148,15 @@
 
     <ImageView
         android:id="@+id/img_lbl_account"
-        android:alpha="0.5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:contentDescription="@string/account_image"
         android:src="@drawable/logo_acccount"
         app:layout_constraintBottom_toTopOf="@id/ll_root"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/ll_root"
-        android:contentDescription="@string/account_image">
+        app:layout_constraintTop_toTopOf="@id/ll_root">
 
     </ImageView>
 
