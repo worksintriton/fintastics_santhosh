@@ -42,6 +42,8 @@
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_bg_solidthicblue.xml" value="0.290625" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_bg_thicblue.xml" value="0.6323529411764706" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_bg_white.xml" value="0.290625" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_bgnd_white.xml" value="0.21614583333333334" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangle_corner_primary_blue.xml" value="0.21614583333333334" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangular_corner_bg_darkblue.xml" value="0.29010416666666666" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangular_corner_bg_grey.xml" value="0.2911458333333333" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/drawable/rectangular_corner_bg_lightgrey.xml" value="0.290625" />
@@ -73,9 +75,10 @@
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_familymemberslist.xml" value="0.27447916666666666" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_selectfamilymemberslist.xml" value="0.2" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_table_row_item.xml" value="0.28229166666666666" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_transacperiod.xml" value="0.27447916666666666" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/adapter_transactionlist.xml" value="0.27447916666666666" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/alert_logout_layout.xml" value="0.28229166666666666" />
-        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/fragment_home.xml" value="0.275" />
+        <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/fragment_home.xml" value="0.19947916666666668" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/header_layout.xml" value="0.4496487119437939" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/nav_header_main.xml" value="0.6182669789227166" />
         <entry key="..\:/Workspace/FintasticsAndroid/app/src/main/res/layout/navigation_drawer_layout_new.xml" value="0.617096018735363" />

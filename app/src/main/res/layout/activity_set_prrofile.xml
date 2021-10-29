@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -47,74 +48,11 @@
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_14sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/_15dp">
-
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/roboto_medium"
-                    android:maxLines="1"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:text="@string/father"
-                    android:textColor="@color/text_black"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/_15dp">
-
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/roboto_medium"
-                    android:maxLines="1"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:text="@string/mother"
-                    android:textColor="@color/text_black"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="@dimen/_15dp">
-
-                <RadioButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:ellipsize="end"
-                    android:fontFamily="@font/roboto_medium"
-                    android:maxLines="1"
-                    android:paddingStart="@dimen/_20dp"
-                    android:paddingEnd="@dimen/_20dp"
-                    android:text="@string/other"
-                    android:textColor="@color/text_black"
-                    android:textSize="16sp" />
-
-            </LinearLayout>
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/_20dp"
-                android:visibility="gone">
+                android:visibility="visible">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_familymemberslist"
@@ -143,12 +81,12 @@
                 android:layout_margin="@dimen/_20dp"
                 android:background="@drawable/rectangle_corner_bg_thicblue"
                 android:fontFamily="@font/roboto_medium"
-                android:onClick="gotoCreateProfile"
                 android:padding="@dimen/_15dp"
                 android:text="@string/set_profile"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_20sp" />
+                android:textSize="@dimen/_20sp"
+                android:visibility="gone"/>
 
 
         </LinearLayout>
@@ -162,5 +100,13 @@
         android:orientation="vertical">
 
     </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/blue"
+        app:indicatorName="LineSpinFadeLoaderIndicator" />
 
 </RelativeLayout>

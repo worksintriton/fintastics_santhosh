@@ -13,25 +13,26 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:orientation="vertical">
+
     </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollablContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/footerView"
-        android:layout_below="@+id/headerView" >
+        android:fillViewport="false">
 
         <LinearLayout
             android:id="@+id/content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent">
+
 
                 <RelativeLayout
                     android:id="@+id/ll_root"
@@ -50,9 +51,9 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
+                        android:layout_height="match_parent"
                         android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_60dp"
                         tools:ignore="UselessParent">
 
                         <TextView
@@ -79,80 +80,11 @@
                             android:textColor="@color/blue"
                             android:textSize="@dimen/_14sp" />
 
-                        <LinearLayout
-                            android:layout_width="@dimen/_260dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="@dimen/_10dp"
-                            android:background="@drawable/rectangle_corner_bg_white"
-                            android:orientation="horizontal"
-                            android:padding="@dimen/_15dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:maxLines="1"
-                                android:text="@string/father"
-                                android:textColor="@color/blue"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_260dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="@dimen/_10dp"
-                            android:background="@drawable/rectangle_corner_bg_white"
-                            android:orientation="horizontal"
-                            android:padding="@dimen/_15dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:maxLines="1"
-                                android:text="@string/mother"
-                                android:textColor="@color/blue"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="@dimen/_260dp"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="@dimen/_10dp"
-                            android:background="@drawable/rectangle_corner_bg_white"
-                            android:orientation="horizontal"
-                            android:padding="@dimen/_15dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:ellipsize="end"
-                                android:fontFamily="@font/roboto_bold"
-                                android:gravity="center"
-                                android:maxLines="1"
-                                android:text="@string/other"
-                                android:textColor="@color/blue"
-                                android:textSize="16sp" />
-
-                        </LinearLayout>
-
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:layout_margin="@dimen/_20dp"
-                            android:visibility="gone">
+                            android:visibility="visible">
 
                             <androidx.recyclerview.widget.RecyclerView
                                 android:id="@+id/rv_familymemberslist"
@@ -183,17 +115,16 @@
                             android:drawableEnd="@drawable/icn_arrow_right"
                             android:drawableRight="@drawable/icn_arrow_right"
                             android:fontFamily="@font/roboto_bold"
-                            android:onClick="gotoSetProfile"
                             android:padding="@dimen/_15dp"
                             android:text="@string/next_step"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_20sp" />
+                            android:textSize="@dimen/_20sp"
+                            android:visibility="gone" />
 
                     </LinearLayout>
 
                 </RelativeLayout>
-
 
                 <ImageView
                     android:id="@+id/img_lbl_account"
@@ -221,6 +152,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
+
     </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/blue"
+        app:indicatorName="LineSpinFadeLoaderIndicator" />
 
 </RelativeLayout>
