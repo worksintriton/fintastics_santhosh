@@ -5,29 +5,27 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.triton.fintastics.R;
-import com.triton.fintastics.responsepojo.DashboardDataResponse;
 import com.triton.fintastics.responsepojo.IncomeReportResponse;
 
 import java.util.List;
 
 
-public class IncomeReportListAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class MovementReportListAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private  String TAG = "IncomeReportListAdapter";
+    private  String TAG = "MovementReportListAdapter";
     private List<IncomeReportResponse.DataBean> dataBeanList;
     IncomeReportResponse.DataBean currentItem;
     private Context context;
 
 
 
-    public IncomeReportListAdapter(Context context, List<IncomeReportResponse.DataBean> dataBeanList) {
+    public MovementReportListAdapter(Context context, List<IncomeReportResponse.DataBean> dataBeanList) {
         this.context = context;
         this.dataBeanList = dataBeanList;
     }
@@ -61,7 +59,6 @@ public class IncomeReportListAdapter extends  RecyclerView.Adapter<RecyclerView.
            holder.txt_added.setText("\u20B9 " +"0");
        }
 
-       holder.txt_deducted.setVisibility(View.GONE);
 
         if(currentItem.getDebit_amount() != 0) {
             holder.txt_deducted.setText("\u20B9 " +currentItem.getDebit_amount());

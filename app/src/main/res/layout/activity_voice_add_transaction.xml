@@ -21,6 +21,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
+
     <ScrollView
         android:id="@+id/scrollablContent"
         android:layout_width="match_parent"
@@ -39,111 +40,135 @@
             android:layout_marginRight="@dimen/_20dp"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="@dimen/_10dp"
-                android:id="@+id/ll_mygroup">
-                <ImageView
-                    android:layout_width="@dimen/_30dp"
-                    android:layout_height="@dimen/_30dp"
-                    android:background="@drawable/icn_family"/>
+            <ImageView
+                android:id="@+id/img_voicecommand"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/voice"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription"
+                android:layout_gravity="center"/>
 
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto_medium"
-                    android:text="@string/my_group"
-                    android:textColor="@color/blue"
-                    android:textSize="@dimen/_16sp"
-                    android:layout_marginStart="@dimen/_10dp"
-                    android:layout_marginLeft="@dimen/_10dp" />
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="end"
-                    android:layout_marginEnd="@dimen/_10dp"
-                    android:layout_marginRight="@dimen/_10dp">
-
-                    <ImageView
-                        android:id="@+id/img_share"
-                        android:layout_width="@dimen/_30dp"
-                        android:layout_height="@dimen/_30dp"
-                        android:background="@drawable/share" />
-
-                </RelativeLayout>
-
-
-            </LinearLayout>
 
             <TextView
-                android:id="@+id/txt_lbl_firstname"
+                android:id="@+id/txt_lbl_payment_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
                 android:fontFamily="@font/roboto_medium"
                 android:padding="@dimen/_5dp"
-                android:text="@string/user_name"
+                android:text="@string/payment_type"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_16sp" />
+            <RelativeLayout
+                android:id="@+id/rl_paymenttype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_corner_bg_blue"
+                android:padding="10dp">
+
+                <Spinner
+                    android:id="@+id/spr_payment_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                     />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/spin_arrow"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_lbl_transctype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="@dimen/_5dp"
+                android:text="@string/transaction_type"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_16sp" />
+            <RelativeLayout
+                android:id="@+id/rl_transactiontype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_corner_bg_blue"
+                android:padding="10dp">
+
+                <Spinner
+                    android:id="@+id/spr_transacation_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/spin_arrow"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txt_lbl_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10dp"
+                android:fontFamily="@font/roboto_medium"
+                android:padding="@dimen/_5dp"
+                android:text="@string/description"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_16sp" />
 
-            <EditText
-                android:id="@+id/edt_firstname"
+            <RelativeLayout
+                android:id="@+id/rl_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/rectangle_corner_bg_blue"
-                android:fontFamily="@font/roboto_medium"
-                android:hint="Enter First Name"
-                android:imeOptions="actionDone"
-                android:inputType="text"
-                android:lines="1"
-                android:padding="@dimen/_15dp"
-                android:textColor="@color/txt_black"
-                android:textColorHint="@color/hint_color"
-                android:textSize="16sp"
-                tools:ignore="Autofill,LabelFor" />
+                android:padding="10dp">
+
+                <Spinner
+                    android:id="@+id/spr_desc_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/spin_arrow"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
 
             <TextView
-                android:id="@+id/txt_lbl_lastname"
+                android:id="@+id/txt_lbl_dateoftransaction"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
                 android:fontFamily="@font/roboto_medium"
                 android:padding="@dimen/_5dp"
-                android:text="@string/last_name"
-                android:textColor="@color/text_black"
-                android:textSize="@dimen/_16sp"
-                android:visibility="gone"/>
-
-            <EditText
-                android:id="@+id/edt_lastname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10dp"
-                android:background="@drawable/rectangle_corner_bg_blue"
-                android:fontFamily="@font/roboto_medium"
-                android:hint="Enter Last Name"
-                android:imeOptions="actionDone"
-                android:inputType="text"
-                android:lines="1"
-                android:padding="@dimen/_15dp"
-                android:textColor="@color/txt_black"
-                android:textColorHint="@color/hint_color"
-                android:textSize="16sp"
-                tools:ignore="Autofill,LabelFor"
-                android:visibility="gone"/>
-
-            <TextView
-                android:id="@+id/txt_lbl_dob"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10dp"
-                android:fontFamily="@font/roboto_medium"
-                android:padding="@dimen/_5dp"
-                android:text="@string/dob"
+                android:text="@string/date_of_transaction"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_16sp" />
 
@@ -153,7 +178,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/txt_dob_day"
+                    android:id="@+id/txt_day"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_50dp"
                     android:layout_marginTop="@dimen/_10dp"
@@ -169,7 +194,7 @@
                     tools:ignore="Autofill,LabelFor" />
 
                 <TextView
-                    android:id="@+id/txt_dob_month"
+                    android:id="@+id/txt_month"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_50dp"
                     android:layout_marginStart="@dimen/_10dp"
@@ -187,7 +212,7 @@
                     tools:ignore="Autofill,LabelFor" />
 
                 <TextView
-                    android:id="@+id/txt_dob_year"
+                    android:id="@+id/txt_year"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/_50dp"
                     android:layout_marginStart="@dimen/_10dp"
@@ -208,31 +233,35 @@
                     android:id="@+id/img_calendar"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
+                    android:layout_gravity="center|center_horizontal"
                     android:layout_weight="1"
                     android:contentDescription="@string/arrow_image"
-                    app:srcCompat="@drawable/calander" />
+                    app:srcCompat="@drawable/calander"
+                    />
             </LinearLayout>
 
 
             <TextView
-                android:id="@+id/txt_lbl_emailid"
+                android:id="@+id/txt_lbl_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
                 android:fontFamily="@font/roboto_medium"
                 android:padding="@dimen/_5dp"
-                android:text="@string/email_id"
+                android:text="@string/amount"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_16sp" />
 
-            <TextView
-                android:id="@+id/txt_emailid"
+            <EditText
+                android:id="@+id/edt_amount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_10dp"
                 android:background="@drawable/rectangle_corner_bg_blue"
                 android:fontFamily="@font/roboto_medium"
+                android:hint="Enter Amount"
+                android:imeOptions="actionDone"
+                android:inputType="number"
                 android:lines="1"
                 android:padding="@dimen/_15dp"
                 android:textColor="@color/txt_black"
@@ -240,35 +269,6 @@
                 android:textSize="16sp"
                 tools:ignore="Autofill,LabelFor" />
 
-            <TextView
-                android:id="@+id/txt_lbl_contactno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10dp"
-                android:fontFamily="@font/roboto_medium"
-                android:padding="@dimen/_5dp"
-                android:text="@string/contact_no"
-                android:textColor="@color/text_black"
-                android:textSize="@dimen/_16sp" />
-
-            <EditText
-                android:id="@+id/edt_contactno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_10dp"
-                android:background="@drawable/rectangle_corner_bg_blue"
-                android:fontFamily="@font/roboto_medium"
-                android:hint="Enter Contact Number"
-                android:imeOptions="actionDone"
-                android:inputType="numberPassword"
-                android:maxLength="10"
-                android:maxLines="1"
-                android:singleLine="true"
-                android:padding="@dimen/_15dp"
-                android:textColor="@color/txt_black"
-                android:textColorHint="@color/hint_color"
-                android:textSize="16sp"
-                tools:ignore="Autofill,LabelFor" />
 
 
 
@@ -284,7 +284,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_save"
+            android:id="@+id/btn_submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -292,7 +292,7 @@
             android:background="@drawable/rectangle_corner_bg_thicblue"
             android:fontFamily="@font/roboto_medium"
             android:padding="@dimen/_15dp"
-            android:text="@string/save"
+            android:text="@string/submit"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/_20sp" />

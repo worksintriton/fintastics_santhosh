@@ -43,6 +43,7 @@ import com.triton.fintastics.requestpojo.DashboardDataRequest;
 import com.triton.fintastics.responsepojo.DashboardDataResponse;
 import com.triton.fintastics.sessionmanager.SessionManager;
 import com.triton.fintastics.transaction.AddTransactionActivity;
+import com.triton.fintastics.transaction.VoiceAddTransactionActivity;
 import com.triton.fintastics.transactionreport.TranscationReportActivity;
 import com.triton.fintastics.utils.RestUtils;
 
@@ -91,6 +92,7 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
     Menu nav_Menu;
     private String account_type;
     private String roll_type;
+    private String profileimg;
 
 
     @SuppressLint({"InflateParams", "LogNotTimber", "LongLogTag"})
@@ -106,10 +108,11 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
         HashMap<String, String> user = session.getProfileDetails();
         name = user.get(SessionManager.KEY_USERNAME);
         user_id = user.get(SessionManager.KEY_ID);
+        profileimg = user.get(SessionManager.KEY_PROFILEIMAGE);
 
         account_type = user.get(SessionManager.KEY_ACCOUNT_TYPE);
         roll_type = user.get(SessionManager.KEY_ROLL_TYPE);
-        Log.w(TAG,"userid-->"+user_id+" account_type : "+account_type+" roll_type : "+roll_type);
+        Log.w(TAG,"userid-->"+user_id+" account_type : "+account_type+" roll_type : "+roll_type+" profileimg : "+profileimg);
 
 
         if(user_id != null){
@@ -161,13 +164,20 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
             nav_header_accountype.setText(account_type);
         }
 
-        Glide.with(this).load(R.drawable.nav_headerprofile).circleCrop().into(nav_header_imageView);
+        if(profileimg != null && !profileimg.isEmpty()){
+            Glide.with(this).load(profileimg).circleCrop().into(nav_header_imageView);
+
+        }else{
+            Glide.with(this).load(R.drawable.nav_headerprofile).circleCrop().into(nav_header_imageView);
+
+        }
+
 
 
         nav_header_profilename.setText(name);
 
         RelativeLayout rl_editprofile = header.findViewById(R.id.rl_editprofile);
-        rl_editprofile.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), EditProfileActivity.class)));
+        //rl_editprofile.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), EditProfileActivity.class)));
 
         nav_Menu = navigationView.getMenu();
 
@@ -215,6 +225,14 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
                     gotoChat();
                     return true;
 
+                case R.id.nav_item_ten:
+                    gotoEditprofile();
+                    return true;
+
+                case R.id.nav_item_eleventh:
+                    showLogOutAppAlert();
+                    return true;
+
 
 
 
@@ -227,6 +245,9 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
 
     }
 
+    private void gotoEditprofile() {
+        startActivity(new Intent(getApplicationContext(),EditProfileActivity.class));
+    }
 
 
     private void initToolBar(View view) {
@@ -338,7 +359,8 @@ public class DashboardNavigationDrawer extends AppCompatActivity implements View
 
     }
     private void gotoAddTransaction() {
-        startActivity(new Intent(getApplicationContext(), AddTransactionActivity.class));
+        startActivity(new Intent(getApplicationContext(), VoiceAddTransactionActivity.class));
+        //startActivity(new Intent(getApplicationContext(), AddTransactionActivity.class));
 
     }
 
