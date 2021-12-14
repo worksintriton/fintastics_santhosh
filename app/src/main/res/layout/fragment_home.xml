@@ -61,11 +61,45 @@
 
             </RelativeLayout>
 
+            <!-- Vector -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/vector"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/income_tab_bgnd" />
+
+                <View
+                    android:id="@+id/vector1"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/expense_tab_bgnd" />
+            </LinearLayout>
+
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_45dp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:orientation="horizontal"
+                android:visibility="visible"
                 app:cardCornerRadius="0dp"
                 app:cardPreventCornerOverlap="false"
                 app:cardUseCompatPadding="false">
@@ -74,27 +108,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:id="@+id/ll_income"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
                         android:layout_marginStart="@dimen/_20dp"
-                        android:layout_marginLeft="@dimen/_20dp">
+                        android:layout_marginLeft="@dimen/_20dp"
+                        android:orientation="vertical">
 
                         <TextView
                             android:id="@+id/txt_lbl_incometab"
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:background="@drawable/rectangle_corner_bg_thicblue"
                             android:fontFamily="@font/roboto_medium"
                             android:gravity="center"
                             android:text="@string/income"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_14sp"
-                            android:background="@drawable/rectangle_corner_bg_thicblue"
-                            />
+                            android:textSize="@dimen/_14sp" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:id="@+id/ll_expense"
                         android:layout_width="wrap_content"
@@ -107,13 +142,12 @@
                             android:layout_width="150dp"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:background="@color/white"
                             android:fontFamily="@font/roboto_medium"
                             android:gravity="center"
                             android:text="@string/expense"
                             android:textColor="@color/text_black"
-                            android:textSize="@dimen/_14sp"
-                            android:background="@color/white"
-                            />
+                            android:textSize="@dimen/_14sp" />
                     </LinearLayout>
 
                 </LinearLayout>
