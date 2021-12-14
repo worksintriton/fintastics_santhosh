@@ -31,6 +31,7 @@
 
     <color name="surface">#F1F1F1</color>
 
-
+    <color name="darkblue">#0365CF</color>
+    <color name="tabselcolr">#8BC3FF</color>
 
 </resources>

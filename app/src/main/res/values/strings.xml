@@ -164,6 +164,22 @@
     <string name="typeyourmessage">Type Your Message</string>
     <string name="my_group">My Group</string>
     <string name="available_balance">Available Balance</string>
+    <string name="tabperiod">Periodic</string>
+    <string name="tabonetime">One Time</string>
+    <string name="make_periodic_budget">Make Periodic Budget</string>
+    <string name="image">Image</string>
+    <string name="keeping_your_business_organized_and_under_control_is_easy_with_budgets">Keeping your business organized and under control is easy with budgets</string>
+    <string name="make_one_time_budget">Make One Time Budget</string>
+    <string name="use_the_one_time_budget_on_special_occasions_vacation_christmas_or_reconstitution_in_order_to_stay_on_track">Use The One-Time Budget On Special Occasions Vacation, Christmas Or Reconstitution In Order To Stay On Track</string>
+    <string name="this_month">This Month</string>
+    <string name="food">Food</string>
+    <string name="expenses_0_50000">Expenses 0/50000 ₹</string>
+    <string name="show_more">show more</string>
+    <string name="records">Records</string>
+    <string name="overview">Overview</string>
+    <string name="total_spent">Total Spent</string>
+    <string name="spend_by_categories">Spend By Categories</string>
+    <string name="march">March</string>
 
 
     <string-array name="array_name">
@@ -193,9 +209,6 @@
         <item>November</item>
         <item>December</item>
     </string-array>
-
-
-
 
 
 </resources>
