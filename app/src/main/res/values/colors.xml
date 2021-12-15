@@ -33,5 +33,7 @@
 
     <color name="darkblue">#0365CF</color>
     <color name="tabselcolr">#8BC3FF</color>
+    <color name="text_grey">#9E9E9E</color>
+    <color name="hint">#c8c8c8</color>
 
 </resources>

@@ -1,6 +1,7 @@
 package com.triton.fintastics.budgetary.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,10 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.triton.fintastics.R;
+import com.triton.fintastics.budgetary.AddBudgetaryActivity;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -40,6 +44,9 @@ public class PeriodicFragment extends Fragment {
     @BindView(R.id.ll_no_budget)
     LinearLayout ll_no_budget;
 
+    @SuppressLint("NonConstantResourceId")
+    @BindView(R.id.fab_add_budgetary)
+    FloatingActionButton fab_add_budgetary;
 
     public PeriodicFragment() {
         // Required empty public constructor
@@ -58,6 +65,20 @@ public class PeriodicFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_periodic, container, false);
+
+        ButterKnife.bind(this,view);
+
+        fab_add_budgetary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getContext(), AddBudgetaryActivity.class);
+
+                intent.putExtra("budgetary_mode","Periodic");
+
+                startActivity(intent);
+            }
+        });
 
         return view;
     }

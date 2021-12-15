@@ -1,6 +1,7 @@
 package com.triton.fintastics.budgetary.fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,7 +13,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.triton.fintastics.R;
+import com.triton.fintastics.budgetary.AddBudgetaryActivity;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import butterknife.BindView;
@@ -37,6 +40,10 @@ public class OneTimeFragment extends Fragment {
     @BindView(R.id.ll_no_budget)
     LinearLayout ll_no_budget;
 
+    @SuppressLint("NonConstantResourceId")
+    @BindView(R.id.fab_add_budgetary)
+    FloatingActionButton fab_add_budgetary;
+
     public OneTimeFragment() {
         // Required empty public constructor
     }
@@ -58,7 +65,17 @@ public class OneTimeFragment extends Fragment {
         Log.w(TAG,"onCreateView-->");
         ButterKnife.bind(this,view);
 
+        fab_add_budgetary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Intent intent = new Intent(getContext(), AddBudgetaryActivity.class);
+
+                intent.putExtra("budgetary_mode","One_Time");
+
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }

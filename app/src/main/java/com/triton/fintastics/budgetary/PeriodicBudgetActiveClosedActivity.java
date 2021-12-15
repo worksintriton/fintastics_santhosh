@@ -9,8 +9,6 @@ import androidx.viewpager.widget.ViewPager;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 import com.google.android.material.tabs.TabLayout;
 import com.triton.fintastics.R;
@@ -24,9 +22,10 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class BudgetDetailActivity extends AppCompatActivity {
+public class PeriodicBudgetActiveClosedActivity extends AppCompatActivity {
 
-    private String TAG = "BudgetDetailActivity";
+
+    private String TAG = "PeriodicBudgetActiveClosedActivity";
 
     @SuppressLint("NonConstantResourceId")
     @BindView(R.id.include_header)
@@ -48,7 +47,7 @@ public class BudgetDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_budget_detail);
+        setContentView(R.layout.activity_periodic_budget_active_closed);
 
         ButterKnife.bind(this);
 
@@ -56,16 +55,9 @@ public class BudgetDetailActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
-        ImageView imageView = include_header.findViewById(R.id.img_logout);
-
-        imageView.setImageResource(R.drawable.icn_edit);
-
-        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)imageView.getLayoutParams();
-        params.setMargins(0, 20, 60, 0);
-        imageView.setLayoutParams(params);
-
 
     }
+
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());

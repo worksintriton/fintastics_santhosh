@@ -113,6 +113,17 @@
         android:orientation="vertical"
         android:visibility="visible">
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_budgetary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:background="#01AA71"
+            android:contentDescription="@string/image"
+            android:src="@drawable/icn_plus" />
     </LinearLayout>
 
     <com.wang.avi.AVLoadingIndicatorView

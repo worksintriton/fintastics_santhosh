@@ -74,10 +74,16 @@
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/drawable/seekbar_thumb_shape.xml" value="0.290625" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/drawable/seekbar_track.xml" value="0.290625" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_account_summary.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_add_budgetary.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_add_transaction.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_budgetary.xml" value="0.25" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_expenditure_report.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_income_report.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_income_report_show_data.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_periodic_budget_detail.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_periodic_budget_detail2.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_sign_up.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/activity_view_budgetary.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/adapter_accountsummarry.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/adapter_budgetarylist.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/santh/Documents/GitHub/fintastics_santhosh/app/src/main/res/layout/adapter_chat_cardview.xml" value="0.27447916666666666" />

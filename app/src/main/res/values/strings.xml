@@ -180,6 +180,21 @@
     <string name="total_spent">Total Spent</string>
     <string name="spend_by_categories">Spend By Categories</string>
     <string name="march">March</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="period">Period</string>
+    <string name="account">Account</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="currency">Currency</string>
+    <string name="start_date">Start Date</string>
+    <string name="enddate">End Date</string>
+    <string name="categories">Categories</string>
+    <string name="budget_overspent">Budget Overspent</string>
+    <string name="notify_when_amount_has_exceeded_the_budgey">Notify when amount has exceeded the budgey</string>
+    <string name="select_categories">Select Categories</string>
+    <string name="annually">Annually</string>
+    <string name="active">Active</string>
+    <string name="closxed">Closed</string>
 
 
     <string-array name="array_name">

@@ -15,17 +15,23 @@
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup,UnusedAttribute">
         <activity
+            android:name=".budgetary.PeriodicBudgetActiveClosedActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/BudgetaryTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".budgetary.AddBudgetaryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/BudgetaryTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
             android:name=".budgetary.BudgetDetailActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/NewAppTheme"
             tools:ignore="LockedOrientationActivity">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
         <activity
@@ -159,7 +165,11 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activities.ChooseAccountTypeActivity"
