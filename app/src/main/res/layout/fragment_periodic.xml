@@ -42,12 +42,12 @@
 
                 <RelativeLayout
                     android:id="@+id/rl_weekly"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/_5dp"
                     android:layout_marginEnd="@dimen/_5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rectangle_corner_bg_white_corner_blue">
+                    android:background="@drawable/rounded_cornerwithcolor">
 
                     <TextView
                         android:id="@+id/txt_lbl_weekly"
@@ -64,12 +64,12 @@
 
                 <RelativeLayout
                     android:id="@+id/rl_monthly"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/_5dp"
                     android:layout_marginEnd="@dimen/_5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rectangle_corner_bg_white_corner_blue">
+                    android:background="@drawable/rounded_cornerwithcolor">
 
                     <TextView
                         android:id="@+id/txt_lbl_monthly"
@@ -84,22 +84,14 @@
                         android:textSize="12sp" />
                 </RelativeLayout>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20dp"
-                android:orientation="horizontal">
-
                 <RelativeLayout
                     android:id="@+id/rl_annually"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_60dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="@dimen/_5dp"
                     android:layout_marginEnd="@dimen/_5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/rectangle_corner_bg_white_corner_blue">
+                    android:background="@drawable/rounded_cornerwithcolor">
 
                     <TextView
                         android:id="@+id/txt_lbl_annually"
@@ -109,44 +101,10 @@
                         android:fontFamily="@font/roboto_medium"
                         android:gravity="center"
                         android:padding="@dimen/_5dp"
-                        android:text="@string/annually"
+                        android:text="Annually"
                         android:textColor="@color/txt_black"
                         android:textSize="12sp" />
                 </RelativeLayout>
-
-                <RelativeLayout
-                    android:id="@+id/rl_ondate"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_60dp"
-                    android:layout_marginStart="@dimen/_5dp"
-                    android:layout_marginEnd="@dimen/_5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/rectangle_corner_bg_white_corner_blue">
-
-                    <TextView
-                        android:id="@+id/txt_ondate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="@font/roboto_medium"
-                        android:gravity="center"
-                        android:padding="@dimen/_5dp"
-                        android:text="@string/on_date"
-                        android:textColor="@color/txt_black"
-                        android:textSize="12sp" />
-
-                    <ImageView
-                        android:id="@+id/img_ondate"
-                        android:layout_width="@dimen/_24dp"
-                        android:layout_height="@dimen/_24dp"
-                        android:layout_toEndOf="@+id/txt_ondate"
-                        android:layout_centerVertical="true"
-                        android:contentDescription="@string/arrow_image"
-                        app:srcCompat="@drawable/calander"
-                        android:layout_toRightOf="@+id/txt_ondate" />
-                </RelativeLayout>
-
-
             </LinearLayout>
 
             <RelativeLayout
