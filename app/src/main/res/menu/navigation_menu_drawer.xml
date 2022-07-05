@@ -4,6 +4,13 @@
 
     <group
         android:id="@+id/group1">
+
+        <item android:id="@+id/nav_item_on"
+            android:icon="@drawable/icn_budgetary"
+            android:title="Manage Subscription"/>
+
+
+
         <item android:id="@+id/nav_item_one"
             android:icon="@drawable/icn_budgetary"
             android:title="@string/add_transaction"/>
@@ -52,6 +59,11 @@
                     android:icon="@drawable/icn_change_password"
                     android:title="@string/change_password"
                    />
+
+                <item android:id="@+id/nav_item_seve"
+                    android:icon="@drawable/icn_change_password"
+                    android:title="Notification"
+                    />
 
                 <item
                     android:id="@+id/nav_item_eight"

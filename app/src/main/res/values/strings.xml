@@ -10,6 +10,8 @@
     <string name="select_your_account_type">Select Your Account Type</string>
     <string name="personal_account">Personal Account</string>
     <string name="family_account">Family Account</string>
+    <string name="cam_storage_permissions"><![CDATA[Allow Camera & Storage Permmsions]]></string>
+    <string name="camera_storage_permissions_app_data"><![CDATA[Allow Camera & Storage Permissions in App Info Page]]></string>
 
     <!-- Login Screen-->
     <string name="sign_in">Sign In</string>
@@ -20,9 +22,9 @@
     <string name="verifycode">Verify Code</string>
     <string name="verify_email">Verify email</string>
     <string name="login">Login</string>
-    <string name="create_an_account">Create An Account</string>
+    <string name="create_an_account"><u>Create An Account</u></string>
     <string name="remember_me">Remember me</string>
-    <string name="forget_password">Forget Password?</string>
+    <string name="forgot_password">Forgot Password?</string>
 
     <!-- SignIn Screen-->
     <string name="sign_up">Sign Up</string>
@@ -39,13 +41,14 @@
     <string name="set_profile">Set Profile</string>
 
     <!-- Create Profile Screen-->
-    <string name="save">Save</string>
+    <string name="update">Update</string>
     <string name="first_name">First Name</string>
     <string name="user_name">User Name</string>
     <string name="last_name">Last Name</string>
     <string name="email_id">Email ID</string>
     <string name="contact_no">Contact Number</string>
     <string name="dob">Date Of Birth</string>
+
 
 
     <!-- Common Attr-->
@@ -147,7 +150,7 @@
     <string name="_24th_july">24th July</string>
     <string name="semicolon">:</string>
     <string name="seems_there_is_a_connectivity_issue_please_check_your_internet_connection_and_try_again">Seems there is a connectivity issue. Please check your internet connection and try again</string>
-    <string name="back_to_login">Back to login</string>
+    <string name="back_to_login">Back to login?</string>
     <string name="payment_type">Payment Type</string>
     <string name="date_of_transaction">Date Of Transaction</string>
     <string name="amount">Amount</string>
